@@ -35,7 +35,7 @@ cd ~/MagicMirror/MMM-ModuleHandler
 ```
 Then, you can run it using the following command
 ```sh
-pyhton3 controls.py
+python3 controls.py
 ```
 ## Using the application
 
