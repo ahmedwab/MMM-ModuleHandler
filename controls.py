@@ -10,8 +10,6 @@ def addModule():
         thread = threading.Thread(target= am.addModule(inputValue))
         thread.start()
         addButton.config(text="Add") 
-        print (inputValue + " Added")
-        print ("---------------------------")
         moduleName.delete(0,END)
         addButton.config(text="Add") 
 def add():
@@ -27,8 +25,6 @@ def removeModule():
         thread = threading.Thread(target= rm.removeModule(inputValue))
         thread.start()
         removeButton.config(text="Remove") 
-        print (inputValue + " Removed")
-        print ("---------------------------")
         moduleName.delete(0,END)
         removeButton.config(text="Remove")
 def remove():
