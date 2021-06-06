@@ -53,9 +53,12 @@ What the application will do:
 2. Download all the dependenices reuqired
 3. Add a generic config similar to the photo below
 
+
 <img src="images/screenshot2.png" alt="config">
 
-	
+The application will indicate whether the process of adding or removing is occuring
+
+<img src="images/screenshotAdd.png" alt="Menu">
 
 
 
