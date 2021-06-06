@@ -12,6 +12,7 @@ def removeModule(filename):
         print (filename + " Removed")
         print ("---------------------------")
     except:
+        print ("Error removing module")
     
     
 
