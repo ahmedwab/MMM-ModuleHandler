@@ -1,7 +1,8 @@
-# Module: MMM-ModuleHandler
+# Module: MMM-ModuleHandler [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-The `MMM-ModuleHandler` module retrieves and deletes any desired module found on the https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules website
+The `MMM-ModuleHandler` application retrieves and deletes any desired module found on the https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules website
 
+<img src="screenshot.png" alt="Menu">
 
 ## Installing the Application
 Access your /Magic Mirror folder
@@ -18,17 +19,12 @@ git clone https://github.com/ahmedwab/MMM-ModuleHandler
 Ensure that you have the Latest Version of Python 3 installed.
 That could be retrieved from https://www.python.org/downloads/
 
-Moreover, the following dependencies are needed
+Moreover, to install all the dependencies you can do the following
 ```sh
-	pip3 install requests
-	pip3 install re
-	pip3 install BeautifulSoup
+	cd ~/MagicMirror/MMM-ModuleHandler
+	bash dependencies.sh
 
 ```
-
-
-	
-	
 
 
 ## Running the application 
@@ -39,35 +35,35 @@ cd ~/MagicMirror/MMM-ModuleHandler
 ```
 Then, you can run it using the following command
 ```sh
-pyhton3 MMM-ModuleHandler.py
+pyhton3 controls.py
 ```
 ## Using the application
 
-The Menu will display the following options
-```sh
-Select an option: 
+The Menu will look as follows:
 
- Add
- Remove
- Quit 
+<img src="screenshot.png" alt="Menu">
+ 
+You will need to input the module name Example: MMM-TranslatedMessages
+  
+Then select add or remove
 
-```	
-You can type any of the options available
+What the application will do:
 
-Example: Add
+1. Install the module in the modules folder.
+2. Download all the dependenices reuqired
+3. Add a generic config similar to the photo below
 
-When prompted for a Module name, you can simply input the module name 
-Example: MMM-TranslateMessages
-The Application will install the module folder limited to the Modules available on https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules.
+<img src="screenshot2.png" alt="config">
+
 	
 
 
 
 ## Project Status
 
-As of now, the application is unable to automatically install the configurations for each installed module.
+As of now, the application is completed.
 
-That could be manually installed using the config/config.js file
+Although, any suggestions or changes is highly encouraged.
 
 
 
