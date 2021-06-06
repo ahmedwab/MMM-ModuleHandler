@@ -2,7 +2,7 @@
 
 The `MMM-ModuleHandler` application retrieves and deletes any desired module found on the https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules website
 
-<img src="images/screenshot.png" alt="Menu">
+<img src="images/screenshotapp.png" alt="Menu">
 
 ## Installing the Application
 Access your /Magic Mirror folder
@@ -41,7 +41,7 @@ pyhton3 controls.py
 
 The Menu will look as follows:
 
-<img src="images/screenshot.png" alt="Menu">
+<img src="images/screenshotapp.png" alt="Menu">
  
 You will need to input the module name Example: MMM-TranslatedMessages
   
