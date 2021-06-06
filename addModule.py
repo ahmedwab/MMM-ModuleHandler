@@ -22,6 +22,8 @@ def addModule(filename):
     path = path +"/modules/"+filename
     shellCommand = "cd "+ path + " &&" + " npm install"
     subprocess.call(shellCommand, shell=True)
+    shellCommand = "cd "+ path + " &&" + " npm audit fix"
+    subprocess.call(shellCommand, shell=True)
     shellCommand = "node changeConfig.js add "+filename
     subprocess.call(shellCommand, shell=True)
 

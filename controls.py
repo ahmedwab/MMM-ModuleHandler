@@ -1,23 +1,41 @@
 from tkinter import *
 from tkinter import ttk
 import addModule as am
+import threading
 import removeModule as rm
 
 def addModule():
     inputValue = moduleName.get()
     if inputValue:
-        am.addModule(inputValue)
+        thread = threading.Thread(target= am.addModule(inputValue))
+        thread.start()
+        addButton.config(text="Add") 
         print (inputValue + " Added")
         print ("---------------------------")
         moduleName.delete(0,END)
+        addButton.config(text="Add") 
+def add():
+    addButton.config(text="Adding...") 
+    thread = threading.Thread(target= addModule)
+    thread.start()
+    
 
 def removeModule():
     inputValue = moduleName.get()
     if inputValue:
-        rm.removeModule(inputValue)
+        removeButton.config(text="Removing...") 
+        thread = threading.Thread(target= rm.removeModule(inputValue))
+        thread.start()
+        removeButton.config(text="Remove") 
         print (inputValue + " Removed")
         print ("---------------------------")
         moduleName.delete(0,END)
+        removeButton.config(text="Remove")
+def remove():
+    removeButton.config(text="Removing...") 
+    thread = threading.Thread(target= removeModule)
+    thread.start()
+
 
 window = Tk()
 window.title("Magic Mirror ModuleHandler")
@@ -34,13 +52,13 @@ frame.update()
 
 label = Label(frame,text="Module Name:",bg="#161d25",font=("Courier", 30),fg="white")
 label.place(x=200, y=30, anchor="center")
-moduleName = Entry(frame)
+moduleName = Entry()
 moduleName.place(x=200, y=90, anchor="center")
 
-addButton = Button(frame ,fg = "#161d25",bd="0", text="Add", command = addModule)
+addButton = Button(frame ,fg = "#161d25",width = 15, height=2, text="Add", command = add)
 addButton.place(x=200, y=140, anchor="center")
-removeButton = Button(frame , fg = "#161d25", text="Remove", command = removeModule)
-removeButton.place(x=200, y=170, anchor="center")
+removeButton = Button(frame , fg = "#161d25",width = 15, height = 2, text="Remove", command = remove)
+removeButton.place(x=200, y=180, anchor="center")
 
 
 
