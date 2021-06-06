@@ -1,6 +1,6 @@
 # Module: MMM-ModuleHandler
 
-The `MMM-TranslatedMessages` module retrieves and deletes any desired module found on the https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules website
+The `MMM-ModuleHandler` module retrieves and deletes any desired module found on the https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules website
 
 
 ## Installing the Application
@@ -13,11 +13,12 @@ Clone this repository in the modules folder
 git clone https://github.com/ahmedwab/MMM-ModuleHandler
 ```
 
-## Dependencies
-	Ensure that you have the Latest Version of Python 3 installed.
-	That could be retrieved from https://www.python.org/downloads/
+## Installing the Application
 
-	Moreover, the following dependencies are needed
+Ensure that you have the Latest Version of Python 3 installed.
+That could be retrieved from https://www.python.org/downloads/
+
+Moreover, the following dependencies are needed
 ```sh
 	pip3 install requests
 	pip3 install re
@@ -32,31 +33,32 @@ git clone https://github.com/ahmedwab/MMM-ModuleHandler
 
 ## Running the application 
 
-	To run the application, you must navigate to the application folder 
-	```sh
-	cd ~/MagicMirror/MMM-ModuleHandler
-	```
-	Then, you can run it using the following command
-	```sh
-	pyhton3 MMM-ModuleHandler.py
-	```
+To run the application, you must navigate to the application folder 
+```sh
+cd ~/MagicMirror/MMM-ModuleHandler
+```
+Then, you can run it using the following command
+```sh
+pyhton3 MMM-ModuleHandler.py
+```
 ## Using the application
 
-	The Menu will display the following options
-	```sh
-	Select an option: 
+The Menu will display the following options
+```sh
+Select an option: 
 
- 	Add
- 	Remove
- 	Quit 
+ Add
+ Remove
+ Quit 
 
-	```	
-	You can type any of the options available
+```	
+You can type any of the options available
 
-	Example: Add
+Example: Add
 
-	When prompted for a Module name, you can simply input the module name Ex: MMM-TranslateMessages
-	The Application will install the module folder limited to the Modules available on https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules.
+When prompted for a Module name, you can simply input the module name 
+Example: MMM-TranslateMessages
+The Application will install the module folder limited to the Modules available on https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules.
 	
 
 
@@ -69,7 +71,7 @@ That could be manually installed using the config/config.js file
 
 
 
-<!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributing is greatly encouraged.
@@ -82,7 +84,7 @@ Contributing is greatly encouraged.
 
 
 
-<!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
