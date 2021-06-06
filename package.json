@@ -1,0 +1,11 @@
+{
+  "name": "mmm-modulehandler",
+  "version": "1.0.0",
+  "description": "Handles 3rd party modules",
+  "main": "changeConfig.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ahmedwab",
+  "license": "ISC"
+}
