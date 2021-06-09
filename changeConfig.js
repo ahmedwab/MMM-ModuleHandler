@@ -14,11 +14,11 @@ var moduleName =myArgs[1];
 
 function addModule(){
 
-    mduleContainer= {module: moduleName,
+    moduleContainer= {module: moduleName,
     position: 'top_right'}
     moduleIndex = config.modules.findIndex(element => element.module == moduleName);
     if( moduleIndex==-1)
-        config.modules.push(mduleContainer);
+        config.modules.push(moduleContainer);
     
 
 }
