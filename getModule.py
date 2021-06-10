@@ -5,16 +5,20 @@ from bs4 import BeautifulSoup
 
 def findModule(moduleName):
 
-    URL = 'https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules'
-    page = requests.get(URL)
+    try:
 
-    soup = BeautifulSoup(page.content, 'html.parser')
+        URL = 'https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules'
+        page = requests.get(URL)
 
-    results = soup.find(text=re.compile(moduleName))
-    results = results.parent
+        soup = BeautifulSoup(page.content, 'html.parser')
 
-    results = results.get('href')
-    return results
+        results = soup.find(text=re.compile(moduleName))
+        results = results.parent
+
+        results = results.get('href')
+        return results
+    except:
+        print("Error: Invalid Module Name")
     
     
 
