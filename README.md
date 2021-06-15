@@ -2,7 +2,7 @@
 
 The `MMM-ModuleHandler` application retrieves and deletes any desired module found on the https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules website
 
-<img src="images/screenshotapp.png" alt="Menu">
+<img src="images/image.png" alt="Menu">
 
 ## Installing the Application
 Access your /Magic Mirror folder
