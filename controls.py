@@ -3,6 +3,8 @@ from tkinter import ttk
 import addModule as am
 import threading
 import removeModule as rm
+import pathlib
+
 
 def addModule():
     inputValue = moduleName.get()
@@ -32,14 +34,14 @@ def remove():
     thread = threading.Thread(target= removeModule)
     thread.start()
 
-
+path = pathlib.Path(__file__).parent.absolute()
+filename= str(path) + '/images/image.png'
 window = Tk()
+window.iconphoto(False, PhotoImage(file=filename))
 window.title("Magic Mirror ModuleHandler")
 window.geometry('400x300')
 window.configure(background = "#161d25")
 window.resizable(False, False)
-
-
 frame = Frame(window,bg = "#161d25",width=400,height=400)
 frame.grid(row=0,column=0,sticky="NW")
 frame.grid_propagate(0)
