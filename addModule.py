@@ -1,6 +1,7 @@
 import subprocess
 import os
 import getModule as gm
+import removeModule as rm
 
 
 
@@ -17,6 +18,7 @@ def git(filename):
 def addModule(filename):
     cloneLink = obtainModule(filename)
     try :
+        rm.removeModule(filename)
         git(cloneLink)
         subprocess.call(["mv", filename,"../modules"])
         path = os.path.abspath(os.path.join(os.path.dirname(__file__),".."))
