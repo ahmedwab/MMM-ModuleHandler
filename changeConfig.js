@@ -5,12 +5,14 @@
 const config = require('../config/config.js');
 const fs = require('fs');
 
-
-
 var myArgs = process.argv.slice(2);
 var change = myArgs[0]
 var moduleName =myArgs[1];
 
+/**
+ * 
+ * Adds Module to the top right corner
+ */
 
 function addModule(){
 
@@ -22,6 +24,12 @@ function addModule(){
     
 
 }
+
+/**
+ * 
+ * Removes Module
+ */
+
 function removeModule(){
 
     moduleIndex = config.modules.findIndex(element => element.module == moduleName);
