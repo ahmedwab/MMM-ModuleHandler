@@ -3,10 +3,6 @@ import os
 import getModule as gm
 import removeModule as rm
 
-
-
-
-
 def obtainModule(moduleName):
     return gm.findModule(moduleName)
 
